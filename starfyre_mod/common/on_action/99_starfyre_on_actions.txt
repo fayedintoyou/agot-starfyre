@@ -8,23 +8,5 @@ starfyre_on_game_start = {
 	effect = {
 		# Blackfyre blood — Valyrian heritage
 		dynasty:dynn_Starfyre = { add_dynasty_modifier = valyrian_heritage_dynasty_modifier }
-
-		# Ensure Daemon's Faithful are in Viserra's court
-		character:Starfyre_1 ?= {
-			if = {
-				limit = {
-					is_alive = yes
-					NOT = { character:Starfyre_6 = { is_courtier_of = character:Starfyre_1 } }
-				}
-				add_courtier = character:Starfyre_6
-			}
-			if = {
-				limit = {
-					is_alive = yes
-					NOT = { character:Starfyre_7 = { is_courtier_of = character:Starfyre_1 } }
-				}
-				add_courtier = character:Starfyre_7
-			}
-		}
 	}
 }
