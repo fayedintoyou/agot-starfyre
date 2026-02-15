@@ -21,9 +21,6 @@
 			else = {
 				holder ?= {
 					add_character_flag = block_laamp_starting_event
-					# Add Daemon's Faithful as companions
-					add_courtier = character:Starfyre_6
-					add_courtier = character:Starfyre_7
 				}
 			}
 		}

@@ -216,6 +216,9 @@ Starfyre_6 = {
 	8210.7.12 = {
 		birth = yes
 	}
+	8251.1.1 = {
+		agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_adventurer_starfyre }
+	}
 }
 
 # Ryon — young son of one of Daemon's men, grew up in the band
@@ -240,5 +243,8 @@ Starfyre_7 = {
 
 	8230.9.3 = {
 		birth = yes
+	}
+	8251.1.1 = {
+		agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_adventurer_starfyre }
 	}
 }
