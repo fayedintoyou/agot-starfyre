@@ -1,0 +1,46 @@
+﻿# House Starfyre - Discover the Hidden Cache
+# Viserra must travel to Starfall to find what her grandmother hid
+
+starfyre_discover_cache_decision = {
+	is_shown = {
+		OR = {
+			has_character_flag = starfyre_is_viserra
+			any_ancestor = {
+				has_character_flag = starfyre_is_viserra
+			}
+		}
+		NOT = { has_global_variable = starfyre_cache_discovered }
+	}
+
+	is_valid = {
+		location.county = title:c_starfall
+	}
+
+	effect = {
+		trigger_event = starfyre_startup.0001
+	}
+
+	ai_check_interval = 0
+
+	cost = { }
+}
+
+# Explore the ruins of Dragonstone — the dreams led her here
+starfyre_dragonstone_pilgrimage_decision = {
+	is_shown = {
+		has_character_flag = starfyre_house_founded
+		NOT = { has_character_flag = starfyre_dragonstone_visited }
+	}
+
+	is_valid = {
+		location.barony = title:b_dragonstone
+	}
+
+	effect = {
+		trigger_event = starfyre_dreams.1001
+	}
+
+	ai_check_interval = 0
+
+	cost = { }
+}

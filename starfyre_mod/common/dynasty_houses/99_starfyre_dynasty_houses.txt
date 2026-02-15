@@ -1,0 +1,6 @@
+﻿# House Starfyre
+house_Starfyre = {
+	name = "house_Starfyre"
+	dynasty = dynn_Starfyre
+	motto = "dynn_Starfyre_motto"
+}

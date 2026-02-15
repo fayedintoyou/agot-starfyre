@@ -1,0 +1,244 @@
+﻿# House Starfyre Character History
+# The "Lost Sister" line — secret Blackfyre descendants hidden among the Daynes
+
+###############################################
+# GENERATION 1 - Vaella Blackfyre & Vorian Dayne
+###############################################
+
+# Vaella — daughter of Daemon I Blackfyre
+# Smuggled from the Redgrass Field by Vorian Dayne (8196)
+# Married Vorian on the road to Dorne; he died shortly after
+Starfyre_4 = {
+	name = "Vaella"
+	dynasty_house = house_Blackfyre
+	female = yes
+	culture = high_valyrian
+	religion = fots_seven
+
+	martial = 4
+	diplomacy = 7
+	intrigue = 9
+	stewardship = 5
+	prowess = 3
+
+	trait = education_intrigue_3
+	trait = ambitious
+	trait = patient
+	trait = beauty_good_1
+
+	disallow_random_traits = yes
+
+	8178.5.15 = {
+		birth = yes
+	}
+	8196.12.1 = {
+		add_spouse = character:Starfyre_5
+	}
+	8240.2.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+# Vorian Dayne — younger brother of Morgan Dayne (Dayne_68)
+# Fought at Redgrass Field, smuggled Vaella to Dorne
+# Married her on the journey; died mysteriously after arrival
+Starfyre_5 = {
+	name = "Vorian"
+	dynasty = dynn_Dayne
+	female = no
+	culture = stone_dornish
+	religion = fots_seven
+
+	father = Dayne_66
+	mother = Ryswell_33
+
+	martial = 7
+	diplomacy = 6
+	intrigue = 4
+	stewardship = 6
+	prowess = 8
+
+	trait = education_martial_3
+	trait = brave
+	trait = just
+	trait = knight
+
+	disallow_random_traits = yes
+
+	8175.3.10 = {
+		birth = yes
+	}
+	8196.12.28 = {
+		death = { death_reason = death_murder }
+	}
+}
+
+###############################################
+# GENERATION 2 - Viserra's parents
+###############################################
+
+# Daemon — posthumous son of Vorian and Vaella
+# Raised as a Dayne, carrying the secret
+# Traveled to Qohor to have the Starfyre blade forged
+# Secretly founded House Starfyre under dynn_Starfyre
+Starfyre_2 = {
+	name = "Daemon"
+	dynasty_house = house_Starfyre
+	female = no
+	culture = stone_dornish
+	religion = fots_seven
+
+	father = Starfyre_5
+	mother = Starfyre_4
+
+	martial = 8
+	diplomacy = 5
+	intrigue = 6
+	stewardship = 4
+	prowess = 7
+
+	trait = education_martial_3
+	trait = brave
+	trait = temperate
+	trait = dragon_dreams
+	trait = burned
+
+	disallow_random_traits = yes
+
+	8197.4.15 = {
+		birth = yes
+	}
+	8230.4.1 = {
+		add_spouse = character:Starfyre_3
+	}
+	8250.6.1 = {
+		death = { death_reason = death_burned }
+	}
+}
+
+# Allyria — daughter of Finnian Dayne (Dayne_205)
+Starfyre_3 = {
+	name = "Allyria"
+	dynasty = dynn_Dayne
+	female = yes
+	culture = stone_dornish
+	religion = fots_seven
+
+	father = Dayne_205
+
+	martial = 3
+	diplomacy = 8
+	intrigue = 5
+	stewardship = 6
+	prowess = 2
+
+	trait = education_diplomacy_3
+	trait = compassionate
+	trait = beauty_good_1
+
+	disallow_random_traits = yes
+
+	8210.11.3 = {
+		birth = yes
+	}
+	8230.4.1 = {
+		add_spouse = character:Starfyre_2
+	}
+	8252.3.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+###############################################
+# GENERATION 3 - Viserra (Player Character)
+###############################################
+
+# Viserra — starts as a Dayne, can found House Starfyre via decision
+Starfyre_1 = {
+	name = "Viserra"
+	dynasty = dynn_Dayne
+	female = yes
+	culture = stone_dornish
+	religion = fots_seven
+
+	father = Starfyre_2
+	mother = Starfyre_3
+
+	dna = starfyre_viserra_dna
+
+	martial = 10
+	diplomacy = 7
+	intrigue = 8
+	stewardship = 5
+	prowess = 6
+
+	trait = education_martial_4
+	trait = brave
+	trait = ambitious
+	trait = beauty_good_2
+	trait = intellect_good_1
+	trait = stubborn
+
+	disallow_random_traits = yes
+
+	8235.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+		add_character_flag = starfyre_is_viserra
+	}
+}
+
+###############################################
+# COMPANIONS - Daemon's Faithful
+###############################################
+
+# Ser Gareth — grizzled knight, one of Daemon's original sworn swords
+# He held the dying man's hand and swore to find his daughter
+Starfyre_6 = {
+	name = "Gareth"
+	female = no
+	culture = stone_dornish
+	religion = fots_seven
+
+	martial = 12
+	diplomacy = 4
+	intrigue = 5
+	stewardship = 3
+	prowess = 10
+
+	trait = education_martial_3
+	trait = loyal
+	trait = brave
+	trait = scarred
+
+	disallow_random_traits = yes
+
+	8210.7.12 = {
+		birth = yes
+	}
+}
+
+# Ryon — young son of one of Daemon's men, grew up in the band
+# Quiet, sharp-eyed, good with a bow
+Starfyre_7 = {
+	name = "Ryon"
+	female = no
+	culture = stone_dornish
+	religion = fots_seven
+
+	martial = 8
+	diplomacy = 5
+	intrigue = 7
+	stewardship = 6
+	prowess = 8
+
+	trait = education_martial_2
+	trait = patient
+	trait = content
+
+	disallow_random_traits = yes
+
+	8230.9.3 = {
+		birth = yes
+	}
+}

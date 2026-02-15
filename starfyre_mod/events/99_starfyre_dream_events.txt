@@ -1,0 +1,274 @@
+﻿namespace = starfyre_dreams
+
+# ============================================================
+# DREAM CHAIN — Fires after choosing Option A (House Starfyre)
+# Timeline: ~1 month > 7-10 months > 1.5-2 years > 2.5-3.5 years > 4-6 years
+# Arc: confusion > memory > father's fate > connection > destiny
+# ============================================================
+
+# Dream 1: The First Vision (~1 month after founding House Starfyre)
+starfyre_dreams.0001 = {
+	type = character_event
+	title = starfyre_dreams.0001.t
+	desc = starfyre_dreams.0001.desc
+	theme = intrigue
+
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+
+	trigger = {
+		has_character_flag = starfyre_house_founded
+		has_trait = dragon_dreams
+		NOT = { has_character_flag = starfyre_dream_1_seen }
+	}
+
+	immediate = {
+		add_character_flag = starfyre_dream_1_seen
+	}
+
+	option = {
+		name = starfyre_dreams.0001.a
+		add_stress = 10
+		hidden_effect = {
+			trigger_event = {
+				id = starfyre_dreams.0002
+				days = { 180 300 }
+			}
+		}
+	}
+
+	option = {
+		name = starfyre_dreams.0001.b
+		add_prestige = 50
+		hidden_effect = {
+			trigger_event = {
+				id = starfyre_dreams.0002
+				days = { 180 300 }
+			}
+		}
+	}
+}
+
+# Dream 2: A Father's Voice (~7-10 months later)
+starfyre_dreams.0002 = {
+	type = character_event
+	title = starfyre_dreams.0002.t
+	desc = starfyre_dreams.0002.desc
+	theme = intrigue
+
+	left_portrait = {
+		character = root
+		animation = grief
+	}
+
+	trigger = {
+		has_character_flag = starfyre_dream_1_seen
+		has_trait = dragon_dreams
+		NOT = { has_character_flag = starfyre_dream_2_seen }
+	}
+
+	immediate = {
+		add_character_flag = starfyre_dream_2_seen
+	}
+
+	option = {
+		name = starfyre_dreams.0002.a
+		add_stress = 15
+		hidden_effect = {
+			trigger_event = {
+				id = starfyre_dreams.0003
+				days = { 300 450 }
+			}
+		}
+	}
+
+	option = {
+		name = starfyre_dreams.0002.b
+		add_prestige = 75
+		hidden_effect = {
+			trigger_event = {
+				id = starfyre_dreams.0003
+				days = { 300 450 }
+			}
+		}
+	}
+}
+
+# Dream 3: The Pyre (~1.5-2 years after founding)
+starfyre_dreams.0003 = {
+	type = character_event
+	title = starfyre_dreams.0003.t
+	desc = starfyre_dreams.0003.desc
+	theme = intrigue
+
+	left_portrait = {
+		character = root
+		animation = fear
+	}
+
+	trigger = {
+		has_character_flag = starfyre_dream_2_seen
+		has_trait = dragon_dreams
+		NOT = { has_character_flag = starfyre_dream_3_seen }
+	}
+
+	immediate = {
+		add_character_flag = starfyre_dream_3_seen
+	}
+
+	option = {
+		name = starfyre_dreams.0003.a
+		add_stress = 25
+		hidden_effect = {
+			trigger_event = {
+				id = starfyre_dreams.0004
+				days = { 450 600 }
+			}
+		}
+	}
+
+	option = {
+		name = starfyre_dreams.0003.b
+		add_prestige = 100
+		add_intrigue_skill = 1
+		hidden_effect = {
+			trigger_event = {
+				id = starfyre_dreams.0004
+				days = { 450 600 }
+			}
+		}
+	}
+}
+
+# Dream 4: The Egg Stirs (~3-4 years after founding)
+starfyre_dreams.0004 = {
+	type = character_event
+	title = starfyre_dreams.0004.t
+	desc = starfyre_dreams.0004.desc
+	theme = intrigue
+
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	trigger = {
+		has_character_flag = starfyre_dream_3_seen
+		has_trait = dragon_dreams
+		NOT = { has_character_flag = starfyre_dream_4_seen }
+	}
+
+	immediate = {
+		add_character_flag = starfyre_dream_4_seen
+	}
+
+	option = {
+		name = starfyre_dreams.0004.a
+		custom_tooltip = starfyre_dreams.0004.a.tt
+		add_prestige = 100
+		add_stress = -25
+		hidden_effect = {
+			trigger_event = {
+				id = starfyre_dreams.0005
+				days = { 600 900 }
+			}
+		}
+	}
+
+	option = {
+		name = starfyre_dreams.0004.b
+		custom_tooltip = starfyre_dreams.0004.b.tt
+		add_stress = -15
+		hidden_effect = {
+			trigger_event = {
+				id = starfyre_dreams.0005
+				days = { 600 900 }
+			}
+		}
+	}
+}
+
+# Dream 5: Fire and Blood (~5-7 years after founding)
+starfyre_dreams.0005 = {
+	type = character_event
+	title = starfyre_dreams.0005.t
+	desc = starfyre_dreams.0005.desc
+	theme = intrigue
+
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	trigger = {
+		has_character_flag = starfyre_dream_4_seen
+		has_trait = dragon_dreams
+		NOT = { has_character_flag = starfyre_dream_5_seen }
+	}
+
+	immediate = {
+		add_character_flag = starfyre_dream_5_seen
+	}
+
+	option = {
+		name = starfyre_dreams.0005.a
+		custom_tooltip = starfyre_dreams.0005.a.tt
+		add_prestige = 250
+	}
+
+	option = {
+		name = starfyre_dreams.0005.b
+		custom_tooltip = starfyre_dreams.0005.b.tt
+		add_prestige = 150
+		add_martial_skill = 1
+	}
+
+	option = {
+		name = starfyre_dreams.0005.c
+		add_stress = 30
+	}
+}
+
+# ============================================================
+# DRAGONSTONE PILGRIMAGE — Fires via decision at Dragonstone
+# Requires: starfyre_house_founded (no dream gate — player may visit anytime)
+# The dreams guide you here, but you may find your own way.
+# ============================================================
+
+starfyre_dreams.1001 = {
+	type = character_event
+	title = starfyre_dreams.1001.t
+	desc = starfyre_dreams.1001.desc
+	theme = intrigue
+
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	trigger = {
+		has_character_flag = starfyre_house_founded
+		NOT = { has_character_flag = starfyre_dragonstone_visited }
+	}
+
+	immediate = {
+		add_character_flag = starfyre_dragonstone_visited
+	}
+
+	# "This is where it all began. This is where it begins again."
+	option = {
+		name = starfyre_dreams.1001.a
+		custom_tooltip = starfyre_dreams.1001.a.tt
+		add_prestige = 200
+	}
+
+	# Spend time in the volcanic caverns, listening to the mountain.
+	option = {
+		name = starfyre_dreams.1001.b
+		custom_tooltip = starfyre_dreams.1001.b.tt
+		add_prestige = 100
+		add_stress = -30
+	}
+}

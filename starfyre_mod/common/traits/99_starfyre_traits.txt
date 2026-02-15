@@ -1,0 +1,5 @@
+﻿starfyre_hidden_legacy = {
+	category = lifestyle
+	intrigue = 2
+	diplomacy = 1
+}

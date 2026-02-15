@@ -1,0 +1,31 @@
+﻿d_laamp_adventurer_starfyre = {
+	8251.1.1 = {
+		liege = 0
+		holder = Starfyre_1
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = {
+				name = adventurer_creation_reason
+				value = flag:historical
+			}
+			if = {
+				limit = {
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder ?= {
+					destroy_title = prev
+				}
+			}
+			else = {
+				holder ?= {
+					add_character_flag = block_laamp_starting_event
+					# Add Daemon's Faithful as companions
+					add_courtier = character:Starfyre_6
+					add_courtier = character:Starfyre_7
+				}
+			}
+		}
+	}
+}

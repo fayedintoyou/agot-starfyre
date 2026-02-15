@@ -1,0 +1,7 @@
+﻿d_laamp_adventurer_starfyre = {
+	color = { 120 30 30 }
+	capital = c_starfall
+	landless = yes
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+}

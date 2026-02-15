@@ -1,0 +1,8 @@
+﻿# House Starfyre Dynasty
+# Secret Blackfyre cadet branch, public identity as Dayne offshoot
+
+dynn_Starfyre = {
+	name = "dynn_Starfyre"
+	culture = "westerosi_valyrian"
+	motto = "dynn_Starfyre_motto"
+}

@@ -1,0 +1,194 @@
+﻿dynn_Starfyre={
+	pattern="pattern_solid.dds"
+	color1=rgb { 49 13 35 }
+	color2=rgb { 10 10 10 }
+	color3=rgb { 30 30 80 }
+	colored_emblem={
+		color1=rgb { 220 220 220 }
+		texture="historical_plain.dds"
+		instance={
+			position={ 0.495000 0.143000 }
+			scale={ 0.090000 0.005000 }
+		}
+		instance={
+			position={ 0.500000 0.202000 }
+			scale={ 0.090000 0.010000 }
+			depth=1.010000
+		}
+		instance={
+			position={ 0.490000 0.176000 }
+			scale={ 0.090000 0.060000 }
+			depth=2.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 46 13 33 }
+		texture="historical_plain.dds"
+		instance={
+			position={ 0.495000 0.300000 }
+			scale={ 0.060000 0.775000 }
+			depth=4.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 48 13 34 }
+		texture="historical_plain.dds"
+		instance={
+			position={ 0.495000 0.070000 }
+			scale={ 0.155000 0.030000 }
+			depth=5.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 220 220 220 }
+		color2=rgb { 220 220 220 }
+		color3=rgb { 220 220 220 }
+		texture="asoiaf_dayne_sigil_2.dds"
+		instance={
+			position={ 0.500000 0.370000 }
+			scale={ 0.865000 0.865000 }
+			depth=6.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 220 220 220 }
+		color2=rgb { 220 220 220 }
+		color3=rgb { 220 220 220 }
+		texture="asoiaf_dragon_single_headed_1.dds"
+		instance={
+			position={ 0.520000 0.425000 }
+			scale={ 0.415000 0.415000 }
+			depth=3.010000
+		}
+	}
+}
+
+house_Starfyre={
+	pattern="pattern_solid.dds"
+	color1=rgb { 49 13 35 }
+	color2=rgb { 10 10 10 }
+	color3=rgb { 30 30 80 }
+	colored_emblem={
+		color1=rgb { 220 220 220 }
+		texture="historical_plain.dds"
+		instance={
+			position={ 0.495000 0.143000 }
+			scale={ 0.090000 0.005000 }
+		}
+		instance={
+			position={ 0.500000 0.202000 }
+			scale={ 0.090000 0.010000 }
+			depth=1.010000
+		}
+		instance={
+			position={ 0.490000 0.176000 }
+			scale={ 0.090000 0.060000 }
+			depth=2.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 46 13 33 }
+		texture="historical_plain.dds"
+		instance={
+			position={ 0.495000 0.300000 }
+			scale={ 0.060000 0.775000 }
+			depth=4.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 48 13 34 }
+		texture="historical_plain.dds"
+		instance={
+			position={ 0.495000 0.070000 }
+			scale={ 0.155000 0.030000 }
+			depth=5.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 220 220 220 }
+		color2=rgb { 220 220 220 }
+		color3=rgb { 220 220 220 }
+		texture="asoiaf_dayne_sigil_2.dds"
+		instance={
+			position={ 0.500000 0.370000 }
+			scale={ 0.865000 0.865000 }
+			depth=6.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 220 220 220 }
+		color2=rgb { 220 220 220 }
+		color3=rgb { 220 220 220 }
+		texture="asoiaf_dragon_single_headed_1.dds"
+		instance={
+			position={ 0.520000 0.425000 }
+			scale={ 0.415000 0.415000 }
+			depth=3.010000
+		}
+	}
+}
+
+d_laamp_adventurer_starfyre={
+	pattern="pattern_solid.dds"
+	color1=rgb { 49 13 35 }
+	color2=rgb { 10 10 10 }
+	color3=rgb { 30 30 80 }
+	colored_emblem={
+		color1=rgb { 220 220 220 }
+		texture="historical_plain.dds"
+		instance={
+			position={ 0.495000 0.143000 }
+			scale={ 0.090000 0.005000 }
+		}
+		instance={
+			position={ 0.500000 0.202000 }
+			scale={ 0.090000 0.010000 }
+			depth=1.010000
+		}
+		instance={
+			position={ 0.490000 0.176000 }
+			scale={ 0.090000 0.060000 }
+			depth=2.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 46 13 33 }
+		texture="historical_plain.dds"
+		instance={
+			position={ 0.495000 0.300000 }
+			scale={ 0.060000 0.775000 }
+			depth=4.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 48 13 34 }
+		texture="historical_plain.dds"
+		instance={
+			position={ 0.495000 0.070000 }
+			scale={ 0.155000 0.030000 }
+			depth=5.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 220 220 220 }
+		color2=rgb { 220 220 220 }
+		color3=rgb { 220 220 220 }
+		texture="asoiaf_dayne_sigil_2.dds"
+		instance={
+			position={ 0.500000 0.370000 }
+			scale={ 0.865000 0.865000 }
+			depth=6.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 220 220 220 }
+		color2=rgb { 220 220 220 }
+		color3=rgb { 220 220 220 }
+		texture="asoiaf_dragon_single_headed_1.dds"
+		instance={
+			position={ 0.520000 0.425000 }
+			scale={ 0.415000 0.415000 }
+			depth=3.010000
+		}
+	}
+}
