@@ -17,6 +17,9 @@ Then he tried to hatch the egg. He built a pyre in the hills east of Starfall, s
 ### Generation 3 — Viserra (Player Character)
 **Viserra** starts the game in 8251 as a 16-year-old landless adventurer, nominally a Dayne. Her father's old sworn swords have just found her and told her the truth. She must travel to Starfall to discover the hidden cache — an egg, a sword, and a choice.
 
+### Generation 4 — Lys Exile Branch (History Scaffold)
+For post-Ninepenny bookmarks, Viserra's line is scaffolded forward through Lys. She relocates east, marries into a Rogare cadet line matrilineally, and her eldest child inherits the Starfyre adventurer camp before the later bookmark starts.
+
 ---
 
 ## Gameplay
@@ -83,7 +86,7 @@ mod/
 5. **Load order: after CK3 AGOT**
 
 ### How to Play
-1. Start any AGOT bookmark (tested with Crowned Stag / 8251)
+1. Start any AGOT bookmark (tested with 8251, 8277, 8282, 8284)
 2. Select any character, or use the character finder to locate **Viserra** (landless adventurer in Dorne)
 3. Travel to Starfall and take the "Search for the Hidden Cache" decision
 4. Choose your path
@@ -108,7 +111,7 @@ starfyre_mod/
     99_starfyre_startup_events.txt                      # Cache discovery event
     99_starfyre_dream_events.txt                        # 5-part dream chain + Dragonstone
   history/
-    characters/99_starfyre_characters.txt               # 3 generations of characters
+    characters/99_starfyre_characters.txt               # Viserra line + post-8251 Lys branch
     titles/99_starfyre_titles.txt                       # Adventurer band holder
   localization/english/
     99_starfyre_l_english.yml                           # All loc keys (58 entries)
@@ -125,6 +128,11 @@ starfyre_mod/
 | Starfyre_2 | Daemon | 8197 | 8250 | Starfyre | Found cache, forged sword, died trying to hatch egg. |
 | Starfyre_3 | Allyria | 8210 | 8252 | Dayne | Daemon's wife. Daughter of Finnian Dayne. |
 | Starfyre_1 | Viserra | 8235 | — | Dayne* | Player character. *Can switch to Starfyre via event. |
+| Starfyre_8 | Lysaro | 8232 | — | Rogare | Lys cadet-branch spouse (matrilineal marriage to Viserra in history scaffold). |
+| Starfyre_9 | Vaella | 8254 | — | Dayne | Eldest descendant; receives Starfyre landless camp handoff for later bookmarks. |
+| Starfyre_10 | Daemon | 8257 | — | Dayne | Younger descendant in Lys; backup lineage continuity. |
+
+Post-Ninepenny bookmark coverage (`8277`, `8282`, `8284`) is handled by dated camp holder handoff in `history/titles/99_starfyre_titles.txt`.
 
 ---
 

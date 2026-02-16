@@ -186,6 +186,106 @@ Starfyre_1 = {
 		add_character_flag = has_scripted_appearance
 		add_character_flag = starfyre_is_viserra
 	}
+	8252.1.1 = {
+		agot_safe_set_location_history_effect = { CASTLE = title:c_lys }
+	}
+	8253.1.1 = {
+		add_matrilineal_spouse = Starfyre_8
+	}
+}
+
+###############################################
+# GENERATION 4 - Essos branch (post-8251)
+###############################################
+
+# Lysaro Rogare — custom cadet branch spouse in Lys
+Starfyre_8 = {
+	name = "Lysaro"
+	dynasty = dynn_Rogare
+	female = no
+	culture = lyseni
+	religion = fc_pan_lys
+
+	martial = 4
+	diplomacy = 8
+	intrigue = 7
+	stewardship = 6
+	prowess = 3
+
+	trait = education_diplomacy_3
+	trait = diligent
+	trait = gregarious
+
+	disallow_random_traits = yes
+
+	8232.4.9 = {
+		birth = yes
+	}
+	8251.1.1 = {
+		agot_safe_set_location_history_effect = { CASTLE = title:c_lys }
+	}
+}
+
+# Vaella — eldest child of Viserra's Lys marriage, later camp successor
+Starfyre_9 = {
+	name = "Vaella"
+	dynasty = dynn_Dayne
+	female = yes
+	culture = lyseni
+	religion = fc_pan_lys
+
+	father = Starfyre_8
+	mother = Starfyre_1
+
+	martial = 5
+	diplomacy = 7
+	intrigue = 8
+	stewardship = 4
+	prowess = 4
+
+	trait = education_intrigue_2
+	trait = ambitious
+	trait = quick
+
+	disallow_random_traits = yes
+
+	8254.6.1 = {
+		birth = yes
+	}
+	8276.1.1 = {
+		agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_adventurer_starfyre }
+	}
+}
+
+# Daemon — younger sibling kept in Lys as backup bloodline continuity
+Starfyre_10 = {
+	name = "Daemon"
+	dynasty = dynn_Dayne
+	female = no
+	culture = lyseni
+	religion = fc_pan_lys
+
+	father = Starfyre_8
+	mother = Starfyre_1
+
+	martial = 7
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 5
+	prowess = 6
+
+	trait = education_martial_2
+	trait = stubborn
+	trait = brave
+
+	disallow_random_traits = yes
+
+	8257.2.1 = {
+		birth = yes
+	}
+	8276.1.1 = {
+		agot_safe_set_location_history_effect = { CASTLE = title:c_lys }
+	}
 }
 
 ###############################################

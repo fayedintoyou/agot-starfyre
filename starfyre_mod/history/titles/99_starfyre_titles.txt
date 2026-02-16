@@ -25,4 +25,17 @@
 			}
 		}
 	}
+	8252.1.1 = {
+		effect = {
+			agot_safe_move_laamp_history_effect = { CASTLE = title:c_lys }
+		}
+	}
+	8276.1.1 = {
+		holder = Starfyre_9
+		effect = {
+			holder ?= {
+				add_character_flag = block_laamp_starting_event
+			}
+		}
+	}
 }
