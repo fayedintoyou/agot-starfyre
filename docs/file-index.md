@@ -1,5 +1,19 @@
 # File Index (AGOT + Starfyre)
 
+## Project docs
+
+- `docs/lessons-learned.md`
+  - Append-only operational memory for mistakes, quirks, and confirmed fixes.
+- `docs/troubleshooting.md`
+  - Fast triage path for CK3/AGOT script and localization issues.
+- `docs/flows/starfyre-state-map.md`
+  - Event/flag flow map for Starfyre branching logic.
+
+## Project tooling
+
+- `scripts/preflight.sh`
+  - One-command preflight for AGOT hook lookup, loc coverage, brace balance, merge markers, and BOM checks.
+
 ## AGOT source files used often
 
 - `common/on_action/agot_on_actions/relations/agot_dragon_relation_on_actions.txt`
@@ -27,3 +41,11 @@
 - `starfyre_mod/events/99_starfyre_startup_events.txt`
 - `starfyre_mod/events/99_starfyre_dream_events.txt`
 - `starfyre_mod/localization/english/99_starfyre_l_english.yml`
+
+## Pattern docs
+
+- `docs/patterns/on-actions.md`
+- `docs/patterns/effects.md`
+- `docs/patterns/decisions.md`
+- `docs/patterns/events.md`
+- `docs/patterns/localization.md`

@@ -8,10 +8,21 @@
 ## Workflow
 
 1. **Check `/docs/` first** - lessons-learned, integration-points, file-index, patterns
-2. **Search AGOT** (grep/find) - targeted, never read entire directories
-3. **Read specific files** (view with line ranges)
-4. **Implement** using documented patterns
-5. **Auto-update docs** as you work - don't wait to be asked
+2. **Run preflight baseline** - `scripts/preflight.sh` before editing
+3. **Search AGOT** (grep/find) - targeted, never read entire directories
+4. **Read specific files** (view with line ranges)
+5. **Implement** using documented patterns
+6. **Run preflight again** - `scripts/preflight.sh` after edits
+7. **Auto-update docs** as you work - don't wait to be asked
+
+---
+
+## Mandatory Preflight (Non-Optional)
+
+- Before gameplay/script changes: run `scripts/preflight.sh`
+- After gameplay/script changes: run `scripts/preflight.sh`
+- For new hook work: run `scripts/preflight.sh --hook "hook_or_effect_pattern"`
+- If preflight fails, fix failures before continuing
 
 ---
 
@@ -28,6 +39,19 @@
 - Create reusable code → `/docs/patterns/[system].md`
 
 **Format**: Brief, code examples, file:line refs. No fluff.
+
+---
+
+## Docs Update Matrix
+
+| Change Type | Required Doc Updates |
+|---|---|
+| New AGOT hook/integration point | `docs/integration-points.md`, `docs/file-index.md`, `docs/lessons-learned.md` |
+| Event or chain logic changes | `docs/patterns/events.md`, `docs/flows/starfyre-state-map.md`, `docs/lessons-learned.md` |
+| Decision logic changes | `docs/patterns/decisions.md`, `docs/lessons-learned.md` |
+| Scripted/on_action effect changes | `docs/patterns/effects.md` or `docs/patterns/on-actions.md`, `docs/lessons-learned.md` |
+| Localization key conventions/issues | `docs/patterns/localization.md`, `docs/lessons-learned.md` |
+| New failure mode / error-log finding | `docs/troubleshooting.md`, `docs/lessons-learned.md` |
 
 ---
 
