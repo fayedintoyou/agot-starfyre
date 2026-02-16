@@ -1,0 +1,30 @@
+﻿starfyre_patient_dragonkeeper_modifier = {
+	learning = 1
+	stress_gain_mult = -0.10
+	monthly_prestige = 0.10
+}
+
+starfyre_fire_in_the_blood_modifier = {
+	prowess = 2
+	dread_gain_mult = 0.15
+	stress_loss_mult = 0.10
+}
+
+starfyre_hidden_legacy_guarded_modifier = {
+	intrigue = 2
+	diplomacy = -1
+	owned_hostile_scheme_success_chance_add = 10
+}
+
+starfyre_shadow_dragon_modifier = {
+	intrigue = 3
+	diplomacy = -2
+	owned_hostile_scheme_success_chance_add = 15
+	stress_gain_mult = 0.10
+}
+
+starfyre_dragonstone_firekissed_modifier = {
+	prowess = 1
+	monthly_prestige = 0.20
+	stress_gain_mult = -0.05
+}
