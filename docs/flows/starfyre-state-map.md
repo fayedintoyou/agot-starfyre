@@ -18,6 +18,42 @@ startup.0001 (hidden cache at Starfall)
      - schedule dreams.2001
 ```
 
+## Post-8251 descendant scaffold (history-only)
+
+```txt
+8251.1.1
+  - landless camp holder: Starfyre_1 (Viserra)
+
+8252.1.1
+  - move Starfyre camp to Lys (title history move effect)
+  - move Viserra location to c_lys
+
+8253.1.1
+  - Viserra matrilineally marries Starfyre_8 (dynn_Rogare, lyseni)
+
+8254.6.1
+  - Starfyre_9 (Vaella) is born (dynn_Dayne)
+
+8257.2.1
+  - Starfyre_10 (Daemon) is born (dynn_Dayne)
+
+8276.1.1
+  - landless camp holder handoff: Starfyre_9
+```
+
+Bookmark coverage intent:
+
+- Keeps one Starfyre-line landless playable in each post-Ninepenny AGOT bookmark:
+  - `8277` (Defiance of Duskendale)
+  - `8282` (Robert's Rebellion)
+  - `8284` (The Crowned Stag)
+
+Interaction with cache gate:
+
+- Descendants remain valid for cache discovery because trigger checks:
+  - direct flag `starfyre_is_viserra` OR `any_ancestor` with that flag
+- Cache stays globally one-time through `starfyre_cache_discovered`
+
 ## Dream chain (Starfyre route)
 
 ```txt

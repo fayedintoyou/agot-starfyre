@@ -68,3 +68,12 @@ Use this file as an append-only log. Add short entries while working, not at the
 - Fix: Save modified `.txt` and `.yml` as UTF-8 with BOM (`utf-8-sig`) consistently.
 - References:
   - `starfyre_mod/localization/english/99_starfyre_l_english.yml:1`
+
+### 2026-02-16 - [Bookmark Scaffolding] Use landless title handoff for cross-bookmark lineage playability
+- Symptom: Needed Starfyre descendants to remain playable in later AGOT bookmarks without adding runtime AI migration/marriage events.
+- Cause: Character-history descendants alone do not guarantee a clearly playable start in every later bookmark.
+- Fix: Keep the Starfyre LAAMP title alive and use dated `holder` handoff plus location-history moves (`agot_safe_move_laamp_history_effect` / `agot_safe_set_location_history_effect`).
+- References:
+  - `starfyre_mod/history/titles/99_starfyre_titles.txt:1`
+  - `starfyre_mod/history/characters/99_starfyre_characters.txt:157`
+  - `history/titles/agot_laamp_titles.txt:3`
