@@ -2,61 +2,66 @@
 
 # Viserra discovers the hidden cache at Starfall
 starfyre_startup.0001 = {
-	type = character_event
-	title = starfyre_startup.0001.t
-	desc = starfyre_startup.0001.desc
-	theme = realm
+type = character_event
+title = starfyre_startup.0001.t
+desc = starfyre_startup.0001.desc
+theme = realm
 
-	left_portrait = {
-		character = root
-		animation = personality_bold
-	}
+left_portrait = {
+	character = root
+	animation = personality_bold
+}
 
-	trigger = {
-		OR = {
+trigger = {
+	OR = {
+		has_character_flag = starfyre_is_viserra
+		any_ancestor = {
 			has_character_flag = starfyre_is_viserra
-			any_ancestor = {
-				has_character_flag = starfyre_is_viserra
-			}
-		}
-		NOT = { has_global_variable = starfyre_cache_discovered }
-	}
-
-	immediate = {
-		set_global_variable = {
-			name = starfyre_cache_discovered
-			value = yes
-		}
-
-		# Grant dragon egg
-		agot_create_random_dragon_egg_artifact = { OWNER = root }
-
-		# Grant Valyrian steel sword "Starfyre"
-		starfyre_create_artifact_vs_starfyre_effect = { OWNER = root }
-	}
-
-	# Option A: Found House Starfyre
-	option = {
-		name = starfyre_startup.0001.a
-		custom_tooltip = starfyre_startup.0001.a.tt
-		add_trait = dragon_dreams
-		hidden_effect = {
-			set_house = house:house_Starfyre
-			# Begin dream chain
-			trigger_event = {
-				id = starfyre_dreams.0001
-				days = { 30 60 }
-			}
-		}
-		add_character_flag = starfyre_house_founded
-	}
-
-	# Option B: Remain a Dayne
-	option = {
-		name = starfyre_startup.0001.b
-		add_trait = starfyre_hidden_legacy
-		hidden_effect = {
-			add_character_flag = starfyre_stayed_dayne
 		}
 	}
+	NOT = { has_global_variable = starfyre_cache_discovered }
+}
+
+immediate = {
+	set_global_variable = {
+		name = starfyre_cache_discovered
+		value = yes
+	}
+
+	# Grant dragon egg
+	agot_create_random_dragon_egg_artifact = { OWNER = root }
+
+	# Grant Valyrian steel sword "Starfyre"
+	starfyre_create_artifact_vs_starfyre_effect = { OWNER = root }
+}
+
+# Option A: Found House Starfyre
+option = {
+	name = starfyre_startup.0001.a
+	custom_tooltip = starfyre_startup.0001.a.tt
+	add_trait = dragon_dreams
+	hidden_effect = {
+		set_house = house:house_Starfyre
+		# Begin dream chain
+		trigger_event = {
+			id = starfyre_dreams.0001
+			days = { 30 60 }
+		}
+	}
+	add_character_flag = starfyre_house_founded
+}
+
+# Option B: Remain a Dayne (hidden legacy chain)
+option = {
+	name = starfyre_startup.0001.b
+	custom_tooltip = starfyre_startup.0001.b.tt
+	add_trait = starfyre_hidden_legacy
+	hidden_effect = {
+		add_character_flag = starfyre_stayed_dayne
+		trigger_event = {
+			id = starfyre_dreams.2001
+			days = { 120 220 }
+		}
+	}
+}
 }

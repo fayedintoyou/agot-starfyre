@@ -25,7 +25,7 @@ starfyre_discover_cache_decision = {
 	cost = { }
 }
 
-# Explore the ruins of Dragonstone — the dreams led her here
+# Explore the ruins of Dragonstone — now has prerequisites and a real cost
 starfyre_dragonstone_pilgrimage_decision = {
 	is_shown = {
 		has_character_flag = starfyre_house_founded
@@ -34,10 +34,44 @@ starfyre_dragonstone_pilgrimage_decision = {
 
 	is_valid = {
 		location.barony = title:b_dragonstone
+		is_at_war = no
+		gold >= 75
+		OR = {
+			diplomacy >= 8
+			learning >= 8
+			has_character_flag = starfyre_path_bold
+		}
 	}
 
 	effect = {
 		trigger_event = starfyre_dreams.1001
+	}
+
+	ai_check_interval = 0
+
+	cost = {
+		gold = 75
+	}
+}
+
+# Bold path high-stakes decision
+starfyre_step_into_fire_decision = {
+	is_shown = {
+		has_character_flag = starfyre_house_founded
+		has_character_flag = starfyre_step_into_fire_unlocked
+		NOT = { has_character_flag = starfyre_step_into_fire_done }
+	}
+
+	is_valid = {
+		is_at_war = no
+		OR = {
+			location.barony = title:b_dragonstone
+			location.county = title:c_starfall
+		}
+	}
+
+	effect = {
+		trigger_event = starfyre_dreams.1002
 	}
 
 	ai_check_interval = 0
