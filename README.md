@@ -130,6 +130,15 @@ starfyre_mod/
 
 ## Known Issues & Warnings
 
+### Appearance Inheritance (Important)
+- What changed for Viserra's hair color: in `common/dna_data/99_starfyre_dna.txt`, `hair_color` was changed from `251 1 93 252` to `251 1 251 1`.
+- Why this helps: CK3 DNA color genes use two allele slots. If those slots differ, visible results can appear to vary with inheritance/presentation context. Matching both slots locks the intended color more reliably.
+- What this does **not** change: this only targets hair color stability. It does not force a single immutable barbershop hairstyle in every context.
+- Current baseline for stability is still correct for Viserra:
+  1. `dna = starfyre_viserra_dna`
+  2. `disallow_random_traits = yes`
+  3. Optional one-time startup reapply event/effect if additional drift is observed.
+
 ### Expected Errors (Harmless)
 - `starfyre_is_viserra variable used but never set` — It's a character flag set in history, not a variable. CK3 warns but it works.
 - `Decision picture missing` — Cosmetic. Decisions work but show no custom image.
@@ -178,6 +187,7 @@ starfyre_mod/
 ---
 
 ## Modding Patterns Learned
+
 
 **On-action hooks:** Use `on_game_start` with `on_actions = { my_action }` to run effects at game start. This is how AGOT applies dynasty modifiers — don't try to put modifiers in dynasty definitions.
 

@@ -5,8 +5,8 @@
 			hair_color = {
 				251
 				1
-				93
-				252
+				251
+				1
 			}
 			skin_color = {
 				33
